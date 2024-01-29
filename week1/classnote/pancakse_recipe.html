@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <!--this is the character set attribute specifies the character encoding got the HTML document. UTF-8 character set coveres almost 
+        all ppf tyhe character and symbols in this world. If you forget this, your fonts(especially custom ones)
+    might not show up properly!-->
+    <meta charset = "utf-8"/>
+    <!--The viewport tag setes the initial scale and it ensures proper responsive behavior.we are overriding the browsers defalt styling.
+     -->
+    <meta name="viewport" content = "width=device-width,initial-scale=1"/>
+    <!--the title tag, shows up as the big blue link in search results and in the browser tab-->
+    <title>HTML Elements 101</title>
+</head>
+<body>
+    <!-- everything inside the body tags shows up in the browser window! h1 is heading 1, there are 6 heads, h1 to h6. 
+        h1 is the tile of the page, only one h1, h1 is the biggest.-->
+    <h1 id ="top">
+        Heading 1 is the most important text on the page. There should only be one h1 per page!
+    </h1>
+        
+    <h2>BUttermilk Pancakes</h2>
+    <p>This is a description of this amazing recipe.</p>
+    <h3>Ingredients</h3>
+    <!-- unordered lists are used for listing items when the exact order is not important-->
+    <ul>
+        <!-- individual items in an ordered or unordered list need to be in li tags-->
+        <li>1 cup flour</li>
+        <li>1 cup milk</li>
+        <li>1 stick of butter</li>
+        <li>2 tbsp sugar</li>
+        <li>1 egg</li>
+        <li>spices
+            <ul>
+                <li>cinamon</li>
+                <li>salt</li>
+                <li>nutmeg</li>
+            </ul>
+        </li>
+    </ul>
+    <!--ordered lists care about and display some sort of order notation-->
+    <h3>Instructions</h3>
+        <ol>
+            <li>Combine all ingredients in a bowl. Mix well</li>
+            <li>Heat pan on medium, melt 1 tbsp butter</li>
+            <li>Add scoop of butter to the pan.</li>
+            <li>more steps to show a sub-ordered listi
+                <ol>
+                    <li>count to ten</li>
+                    <li>flip the pancake</li>
+                    <li>count to ten again...</li>
+                </ol>
+            </li>
+        </ol>
+        <!--anchor tags are for links to other ocations on the same page, other pages on the same site,or other pages on any site!-->
+        <!-- href is the reference to where you are linking to.
+        use target _blank to open the link in a new tab, use _self to open in the same tab. if you dont specify a target, it will open in the same tab.-->
+        <a hrep="https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/" target="_blank">
+            Link to a real pancake recipe!</a>
+        <br />
+        <a hrep = "#top"> 
+            Back to top of page
+        </a>
+        <br/>
+        <img 
+         src = "https://www.allrecipes.com/thmb/kvvETNZfOtAptH69gUsK6FaKRKA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21014-Good-old-Fashioned-Pancakes-mfs_001-1fa26bcdedc345f182537d95b6cf92d8.jpg"
+         width = "500px"
+         height = "500px"
+         alt = "Buttermilk panckes with hot maple syrup"
+         title="Buttermilk Pancakes"
+        />
+        <img 
+         src="img/panckes.jpeg" alt="using an image inside our own sites img folder"
+        />
+        <a href="about/index.html">About page link.</a>
+
+    
+</body>
+</html>
