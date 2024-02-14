@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/CSS">
+        /* universal selector to zero out default margins or padding */
+        *{
+            margin:0;
+        }
+        /* tag selector applies to every instance of that tag on the page */
+        p{
+            /* 1rem=16px */
+            margin-top: 1rem;
+            margin-bottom:1rem;
+            margin-left:0.5rem;
+            color:#ff5500;
+            /* #f50 same as #ff5500 */
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 200;
+        }
+
+        .silly-text{
+            font-family: fantasy;
+            /* you can only choose from the font weight your font supports */
+            text-decoration: line-through;
+        }
+
+        #really-important{
+            font-weight:600;
+            font-size:large;
+            font-style:oblique;
+            line-height: 1.5;
+            text-transform: uppercase;
+
+        }
+
+        .indented{
+            text-indent:20%;
+        }
+
+        .align-right{
+            text-align: right;
+        }
+
+        .align-justified{
+            text-align: justify;
+        }
+
+        a{
+            color:inherit;
+            text-decoration: none;
+        }
+
+        /* internal style sheet(only applies to this page/file) */
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 style="margin:10px 20px; color:blueviolet">Heading</h1>
+    <p class="align-right">
+        <span class="silly-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> Curabitur eu neque id eros semper semper sit amet at nisi. 
+        Suspendisse vel placerat nunc, vel vestibulum dui. Vivamus viverra, ante sed hendrerit euismod, leo ipsum efficitur odio, 
+        sed vestibulum lacus eros nec nulla. Praesent tristique augue urna, eget pulvinar turpis interdum in. 
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+        Nunc at justo quis orci pharetra mollis. Praesent posuere turpis ac lacus auctor, non commodo lectus faucibus. 
+        <span class="silly-text">Sed rhoncus tempus tortor a viverra. Nam dignissim tortor sit amet leo rutrum, eget eleifend magna imperdiet.</span> 
+
+    <p id="really-important" class="align-justified">
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+        Morbi gravida ex vel lectus feugiat, eget rhoncus risus tincidunt. 
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius maximus metus in ullamcorper. 
+        Donec nisi diam, eleifend eu iaculis ut, tincidunt vitae odio. Suspendisse non pellentesque felis, 
+        sit amet faucibus augue.<a href="#">Suspendisse ligula nunc, pretium ut elit et, pretium semper neque.</a> 
+    </p>
+
+    <p>
+        <span class="intended">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Nulla magna justo, semper sit amet scelerisque non, faucibus in velit. Pellentesque et metus enim. 
+        Morbi molestie elementum ornare. Proin rhoncus suscipit sem non consectetur. 
+        Suspendisse pellentesque mollis elit, ac ornare justo sodales pellentesque. 
+        Praesent arcu ligula, rutrum in semper vel, mollis nec arcu. Duis condimentum nisi vel tellus faucibus, 
+        ut elementum eros ultrices. Morbi id luctus purus. Proin posuere dolor vel nunc mollis, at iaculis libero condimentum.
+        </span>
+    </p>
+    </p>
+
+</body>
+
+
+
+
