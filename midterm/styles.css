@@ -38,13 +38,13 @@ h1 {
 }
     
 
-#clickableImage {
+/* #clickableImage {
     width: 20%;
     height:auto;
     transition: all 0.5s ease;
     filter: grayscale(100%);
     cursor: pointer; 
-}
+} */
 
 /* @media (max-width: 600px) {
     .image-container {
@@ -56,9 +56,17 @@ h1 {
 } */
 
 
-#clickableImage.clicked {
+/* #clickableImage.clicked {
     width: 20%;
     filter: grayscale(0);
+} */
+
+#introduction {
+    text-align: center; 
+    margin: 20px auto; 
+    padding: 0 15px; 
+    top:600px;
+    color:white;
 }
 
 #sidebar {
