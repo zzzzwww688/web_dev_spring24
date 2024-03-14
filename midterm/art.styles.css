@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: auto;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+#art-container-title{
+    text-align: center;
+    color: white;
+    font-size: 15px; 
+    padding: 20px 0; 
+}
+
+
+.Art-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+}
+
+
+.Art-container img {
+    position:relative;
+    display: flex; 
+    justify-content: center; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%); 
+    transition: filter 1s ease; 
+}
+
+.art-title {
+    position: relative;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+}
+
+.kistch_mv {
+    flex: 0.5;
+}
+
+.protopie_app {
+    flex: 0.5;
+}
+
+.Art-container img:hover {
+    filter: none;
+}
+
+#sidebar {
+    position: sticky; 
+    left: 0; 
+    bottom: 0; 
+    width: 200px; 
+    height: 100px;
+}
+
+
+#sidebar ul li a {
+    display: block; 
+    position: relative;
+    top:auto;
+    bottom: 0;
+    color: white; 
+    padding: 2px;
+    text-decoration: none; 
+    font-size: 30px; 
+}
+
+
+#sidebar ul li a:hover {
+    background-color: white; 
+    color:black;
+    transition: 1s;
+}
+
+@media (min-width: 768px) and (max-width: 2880px) {
+    /* .Art-container {
+        flex-direction: column; 
+    } */
+
+    .kistch_mv  img {
+        width:100%; 
+        margin-top: 30px;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+    .art-title {
+        font-size: 1.2rem; 
+    }
+
+    #sidebar {
+        width: 150px; 
+
+    }
+
+    #sidebar ul li a {
+        font-size: 18px; 
+    }
+
+    #sidebar ul li a:hover {
+        background-color: white; 
+        color:black;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 767px) {
+
+
+    .Art-container {
+        display: flex;
+        flex-direction: column; 
+        margin-top: 120px; 
+        height: auto;
+        width:auto;
+    }
+    .art {
+        margin: 5px; 
+    }
+
+    /* .art img {
+        width: 55%; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+    } */
+
+    .kistch_mv img{
+        width: 100%; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .art-title {
+        font-size: 1rem; 
+    }
+
+    #sidebar {
+        position: fixed; 
+        bottom: 0; 
+        left: 0; 
+        width: 100%; 
+        height: auto; 
+        display: flex;
+        justify-content: space-around; 
+        flex-wrap: nowrap; 
+        z-index: 1000; 
+    }
+
+    #sidebar ul {
+        display: flex;
+        width: 100%; 
+        justify-content: space-around; 
+        list-style-type: none;
+        padding: 0; 
+    }
+
+    #sidebar ul li {
+        display: flex; 
+    }
+
+    #sidebar ul li a {
+        display: block; 
+        text-align: center; 
+        padding: 10px 0;
+        color: white; 
+        text-decoration: none; 
+        font-size: 14px; 
+    }
+
+    #sidebar ul li a:hover{
+        background-color: none;
+        color:black;
+    }
+}
+

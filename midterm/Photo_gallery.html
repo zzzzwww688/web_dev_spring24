@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jacqueine's Profolio Art Page</title>
+    <link rel="stylesheet" type="text/css" href="/Users/jacquelinewang/Desktop/web_dev_spring24/midterm/photo.styles.css">
+  </head>
+  <body>
+    <header>
+        <div id="header">
+            <h1>
+                <p link rel="preconnect" href="https://fonts.googleapis.com">Art Projects</p>
+            </h1>
+        </div>
+    </header>
+
+    <h2 id="gallery_title" style="cursor: pointer;">Photo Gallery</h2>
+    
+    <div id="scroll-container" style="display: none;">
+        <img src="/Users/jacquelinewang/Desktop/web_dev_spring24/midterm/img/DSC07587.JPG" alt="Photo 1">
+        <img src="/Users/jacquelinewang/Desktop/web_dev_spring24/midterm/img/DSC07387.JPG" alt="Photo 2">
+        <img src="/Users/jacquelinewang/Desktop/web_dev_spring24/midterm/img/DSC07765.JPG" alt="Photo 3">
+        <img src="/Users/jacquelinewang/Desktop/web_dev_spring24/midterm/img/DSC06899.JPG" alt="Photo 4">
+        <img src="/Users/jacquelinewang/Desktop/web_dev_spring24/midterm/img/DSC06950.JPG" alt="Photo 5">
+        
+    </div>
+
+    <script>
+        document.getElementById('gallery_title').addEventListener('click', function() {
+            this.style.display = 'none';
+            document.getElementById('scroll-container').style.display = 'block';
+        });
+    </script>
+    
+
+    <nav id="sidebar">
+        <ul>
+            <li><a href="/Users/jacquelinewang/Desktop/web_dev_spring24/midterm/profolio_project.html">About</a></li>
+            <li><a href="/Users/jacquelinewang/Desktop/web_dev_spring24/midterm/Science.html">Science</a></li>
+            <li><a href="/Users/jacquelinewang/Desktop/web_dev_spring24/midterm/Art.html">Art</a></li>
+            <li><a href="/Users/jacquelinewang/Desktop/web_dev_spring24/midterm/Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </body>
+</html>
