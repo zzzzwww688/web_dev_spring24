@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Extra Credit Hw</title>
+    <script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const startButton = document.getElementById('startButton');
+            const startSound = document.getElementById('startSound');
+            const dogImage = document.getElementById('dogImage'); 
+
+            async function fetchAndDisplayDogImage() {
+                // try {
+                    const response = await fetch('https://dog.ceo/api/breeds/image/random');
+                    const data = await response.json();
+                    dogImage.src = data.message; 
+                    dogImage.style.display = 'block'; 
+                // } catch (error) {
+                //     console.error('Error fetching new dog image:', error);
+                // }
+            }
+
+            function startFunction() {
+                console.log('The start button was clicked!');
+                startSound.play(); 
+                startButton.style.display = 'none'; 
+                
+                setTimeout(fetchAndDisplayDogImage, 3000); 
+                startSong.play();
+            }
+
+            startButton.addEventListener('click', startFunction);
+
+            dogImage.addEventListener('click', fetchAndDisplayDogImage);
+        });
+
+
+
+
+    </script>
+    <style>
+        #startButton{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            margin-top: 15%;
+            transition: 3s;
+        }
+
+        #dogImage {
+            display: none; 
+            margin-top: 20px;
+            max-width: 60%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="startButton" src="/Users/jacquelinewang/Desktop/web_dev_spring24/week 9/images-18 copy.jpeg" alt="Start" style="cursor: pointer;">
+
+    <script src="script.js"></script>
+
+    <audio id="startSound" src="/Users/jacquelinewang/Desktop/web_dev_spring24/week 9/Happy Puppy Barks Sound Effect.mp3" type="audio/mp3"></audio>
+
+    <img id="dogImage" src="" alt="Random Dog" style="display:none;">
+
+    <audio id="startSong" src="/Users/jacquelinewang/Desktop/web_dev_spring24/week 9/Happy Guy Hap hap Happy Dog Song.mp3" type="audio/mp3"></audio>
+
+
+
+
+</body>
+</html>
